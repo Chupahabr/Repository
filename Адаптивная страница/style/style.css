@@ -1,0 +1,266 @@
+body{
+	grid-template: 50px 50px repeat(3, 2fr) 50px 50px  / repeat(5, 1fr);
+	}
+header{
+	grid-row-start: span 2;
+	grid-column-start: span 5;	
+	}
+nav{
+	grid-row-start: span 3;
+	grid-column-start: span 1;
+	display: flex;
+	align-items: center;
+	}
+nav:nth-of-type(1){
+	justify-content: flex-start;	
+	}
+nav:nth-of-type(2){
+	justify-content: flex-end;	
+	}
+main{
+	grid-row-start: span 3;
+	grid-column-start: span 3;
+	grid-template: 10vh repeat(4, 1fr) / 1fr;
+	}
+footer{
+	grid-row-start: span 2;
+	grid-column-start: span 5;
+	background-color: #575757;
+	}
+	
+	
+header.grid{
+	grid-template: 1fr 1fr / repeat(5, 1fr);
+	background-color: #575757;
+	}
+header div.logo{
+	grid-row-start: span 2;
+	grid-column-start: span 2;	
+	}
+header div.nav{
+	grid-row-start: span 1;
+	grid-column-start: span 3;
+	justify-content: flex-end;
+	}
+header div.autoriz{
+	grid-row: 1 / 2;
+	grid-column: 5 / 6;	
+	}
+	
+	
+footer.grid{
+	grid-template: 1fr 1fr / repeat(5, 1fr)	
+	}
+footer div.menu{
+	grid-row-start: span 2;
+	grid-column-start: span 2;
+	display: flex;
+	}
+footer div.copy{
+	grid-row-start: span 1;
+	grid-column-start: span 3;		
+	}
+footer div.searth{
+	grid-row: 1 / 2;
+	grid-column: 5 / 6;
+	justify-content: center;
+	align-items: center;
+	}
+
+button{
+	height: 20px;
+	width: 20px;
+	margin-left: 20px;	
+	}
+	
+nav div.block_nav{
+	width: 98%;
+	height: 98%;
+	border: 2px solid;
+	border-radius: 20px;
+	}
+.nav1 div p{
+	margin: 5px	
+	}
+.nav1 ul{
+	width: 90%;
+	margin-left: 10%;
+	}
+.nav1 li{
+	text-decoration: none;
+	}
+.nav2 .block_nav{
+	flex-wrap: wrap;	
+	}
+.nav2 div{
+	width: 100%;
+	}
+
+a{
+	height: auto;	
+	}
+.nav2 img{
+	height: 13vh;	
+	}
+.nav2 img:hover{
+	height: 15vh;
+	transition: 0.5s;	
+	}	
+
+
+.big_block{
+	grid-row: span 2;	
+	}
+.big_block div{
+	display: flex;
+	justify-content: center;
+	}
+
+
+
+header li{
+	width: 140px;
+	height: 35px;
+	text-align: center;
+	vertical-align: middle;
+	background-color: #ddd;
+	}
+header li ul{
+	margin: 21px 0 0 0;	
+	}
+header ul li{
+	display: inline-block;
+	padding: 5px;
+	margin: 0 5px;
+	border: 2px solid;
+	border-radius: 50px;	
+	}
+header li:hover{
+	background-color: grey;
+	border-color: orange;
+	}
+header ul{
+	display: flex;
+	align-items:center;
+	justify-content: flex-end;
+	}
+header .lvl2{
+	display: none;
+	flex-wrap: wrap;
+	width: 150px;
+	justify-content: flex-start;
+	}
+header .lvl2 li{
+	border-color: orange;	
+	}
+header ul li:hover > ul{
+		display: flex;
+		border-color: orange;
+	}
+
+footer span{
+	width: 50%;
+	}
+img{
+	height: 100%;
+	}
+header img{
+	margin-left: 50px;
+	}
+
+main .big_block{
+	display: flex;	
+	}
+main img{
+	height: 400px;	
+	}
+p{
+	display: flex;
+	align-items: center;
+	padding: 0 15px;
+	}
+	
+@media (max-width: 1150px){
+		main .big_block {
+    		display: inline-block;
+		}
+	}
+@media (max-width: 970px){
+		footer.grid {
+   		grid-template: 1fr 1fr / repeat(2, 1fr);
+		}	
+	}
+@media (max-width: 750px){
+		nav:nth-of-type(2){
+			grid-column: 1/2;
+			grid-row: 4/6;	
+		}
+		nav:nth-of-type(1){
+			grid-row-start: span 1;
+			grid-column-start: span 1;	
+		}
+		body{
+			height: 2200px;			
+			}
+		main {
+			grid-column-start: span 4;
+			}
+	}
+@media (max-width: 600px){
+		nav:nth-of-type(1) {
+    		grid-row: span 1;
+    		grid-column: 1/6;
+
+			}
+		nav:nth-of-type(2) {
+    		grid-column: 1/6;
+    		grid-row: 4/5;
+			}
+		main {
+			grid-column-start: span 5;
+			}
+		.nav2 div{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			}
+	}
+@media (max-width: 820px){
+	header ul{
+		display: none;
+		transition: 0.5s;
+		}	
+	header div.micro{
+		width: 35px;
+		height: 35px;
+		background-color: red;
+		display: block;
+		margin-right: 25px;
+		border-radius: 50px;
+		}
+	header div.micro:hover {
+		background-color: transparent;
+		}
+	header div.micro:hover > ul{
+		display: flex;
+		width: 200px;
+		margin-left: -100px;
+		}
+	header ul.lvl1 li{
+		width: 100vw;		
+		}
+	header div.micro:hover > ul{
+		flex-wrap: wrap;
+		width: 150px;
+		justify-content: flex-start;
+		}
+	header div.micro:hover > ul li{
+		width: 100px;
+		}
+	header .lvl2{
+		margin: -25px 0 0 -125px;	
+		}
+	header .bag{
+		margin-top: -40px;		
+		}
+	}

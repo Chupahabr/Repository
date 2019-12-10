@@ -1,0 +1,14 @@
+.front{
+	top: 70vh;
+	bottom: 5vh;
+	left: 5vw;
+	right: 5vw;
+	background-color: #005300;
+}
+.back{
+	top: 1vw; 
+	bottom: 1vw; 
+	left: 1vw;
+	right: 1vw;
+	background-color: #18183e;
+}

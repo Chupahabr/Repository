@@ -1,0 +1,52 @@
+.slideContein{
+	width: 800px;
+	height: 600px;
+	margin: 20px auto;
+}
+.left{
+	left: 0;
+}
+.right{
+	right: 0;
+}
+.left, .right{
+	font-size: 1000%;
+	top: 30%;
+	z-index: 2;
+}
+.imgInBody{
+	width: 500px;
+	height: 300px;
+}
+.circleContein{
+	height: 35px;
+	width: 800px;
+	margin: 0 auto;
+}
+.circleElement{
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	border: solid 5px white;
+	background-color: #191919;
+	display: inline-block;
+}
+#pointer:hover, #exit:hover{
+	color: #828282 /*rgb(62, 122, 184)*/;
+}
+.circleElement:hover{
+	border-color: #828282;
+}
+#modalWindow{
+	background-color: #000c;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;	
+	}
+#exit{
+	font-size: 60px;
+	right: 50px;
+	top: 50px;
+	position: absolute;	
+	}
