@@ -17,3 +17,13 @@
 	height: 50px;
 	position: relative;
 }
+#balls{
+	width: 15px;
+	height: 15px;
+	background-color: red;
+	border-radius: 50%;
+	position: absolute;
+}
+.invision{
+	background-color: white;
+}
